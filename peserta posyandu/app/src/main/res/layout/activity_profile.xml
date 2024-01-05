@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_two"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/gradient1"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="Profil Peserta"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="8dp"
+                    android:text="NIK"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/nik"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="NIK Peserta"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:paddingTop="15dp"
+                        android:paddingRight="5dp"
+                        android:text="Salin"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="NAMA"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="33dp"
+                    android:text="Nama Peserta"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="JENIS KELAMIN"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="33dp"
+                    android:text="Jenis Kelamin"
+                  />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="ALAMAT"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="33dp"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+
+                    android:text="Alamat Peserta"
+                   />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="TANGGAL LAHIR"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tgl_lahir"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:paddingLeft="33dp"
+                    android:textSize="20dp"
+
+                    android:text="Tanggal Lahir Peserta"
+                   />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="JENIS PESERTA"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/kategori_peserta"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:paddingLeft="33dp"
+                    android:textSize="20dp"
+
+                    android:text="Ketegori Peserta"
+                  />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/kartu_keluarga"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="LIHAT DOKUMEN KARTU KELUARGA"
+                    android:textColor="#E53935"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/ubah_kartu_keluarga"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#E53935"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:text="UBAH KARTU KELUARGA"
+
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/edit_profil"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="EDIT PROFIL"
+                    android:textColor="#E53935"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_two"
+    android:layout_height="match_parent"
+    tools:context=".DetailPemeriksaanBalita">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/gradient1"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="DETAIL PEMERIKSAAN BALITA"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="NIK"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/nik"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="33dp"
+                        android:text="NIK Peserta"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="15dp"
+                    android:paddingRight="5dp"
+                    android:text="Salin"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="NAMA"
+                  />
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="33dp"
+                    android:text="Nama Peserta"
+                   />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text=" UMUR"
+               />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/umur"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="39dp"
+
+                    android:text="Umur"
+                   />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="20dp"
+                        android:text="(Bulan)"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold | italic" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="TANGGAL PERIKSA"
+                   />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/tgl_periksa"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+
+                        android:paddingLeft="33dp"
+                        android:text="Tanggal Periksa"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20dp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="ALAMAT"
+                    />
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="33dp"
+                    android:text="Alamat"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="TANGGAL LAHIR"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/tgl_lahir"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="33dp"
+                    android:text="Tanggal Lahir"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="ORANG TUA"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/orang_tua_kandung"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="33dp"
+                    android:text="Orang Tua"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="BERAT BADAN"
+                   />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/berat_badan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:paddingLeft="33dp"
+                    android:textSize="20dp"
+
+                    android:text="Berat Badan"
+                  />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+
+                        android:paddingRight="20dp"
+                        android:text="KG (Kilogram)"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold | italic" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="KET BERAT BADAN"
+                    />
+
+                <TextView
+                    android:id="@+id/ket_brt_bdn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="33dp"
+                    android:text="Ket Berat Badan"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="TINGGI BADAN"
+                 />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/tinggi_badan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="33dp"
+                        android:text="Tinggi Badan"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+
+                        android:paddingRight="20dp"
+                        android:text="CM (Centimeter)"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold | italic" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="KET TINGGI BADAN" />
+
+                <TextView
+                    android:id="@+id/ket_tinggi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="33dp"
+                    android:text="Keterangan Tinggi Badan"
+                 />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="LINGKAR KEPALA"
+                  />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/lingkar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="33dp"
+                    android:text="Lingkar Kepala"
+                   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+
+                    android:paddingRight="15dp"
+                    android:text="CM (Centimeter)"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold | italic" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="KET LINGKAR KEPALA"
+                   />
+
+                <TextView
+                    android:id="@+id/ket_lingkar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="33dp"
+                    android:text="KeteranganLingkar Kepala"
+                   />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="JENIS IMUNISASI"
+                  />
+
+                <TextView
+                    android:id="@+id/jenis"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="33dp"
+                    android:text="Jenis Imunisasi"
+                   />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="JENIS VITAMIN"
+                    />
+
+                <TextView
+                    android:id="@+id/obat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="33dp"
+                    android:text="Jenis Vitamin"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="CATATAN"
+                    />
+
+                <TextView
+                    android:id="@+id/catatan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:paddingLeft="33dp"
+                    android:text="Catatan"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#ffff"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_two"
+    android:layout_height="match_parent"
+    tools:context=".DetailPemeriksaanIbuHamil">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-98dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/gradient1"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="DETAIL PEMERIKSAAN IBU HAMIL"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="NIK"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nik"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="33dp"
+                        android:text="NIK Peserta"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:paddingTop="15dp"
+                        android:paddingRight="5dp"
+                        android:text="Salin"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="NAMA PESERTA"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="33dp"
+                    android:text="Nama Peserta"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text=" TANGGAL LAHIR"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tgl_lahir"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="38dp"
+                    android:text="Tanggal lahir"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="ALAMAT"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="33dp"
+                    android:text="Alamat"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="UMUR HAMIL"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/umur_hamil"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="33dp"
+                        android:text="Umur Hamil"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="20dp"
+                        android:text="(Bulan)"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold | italic" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="TANGGAL PERIKSA"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tgl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="33dp"
+                    android:text="Tanggal Periksa"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="BERAT BADAN"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/berat_badan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="33dp"
+                        android:text="Berat Badan"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="20dp"
+                        android:text="KG (Kilogram)"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold | italic" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="TENSI DARAH"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tensi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="33dp"
+                        android:text="tensi darah"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+
+                        android:paddingRight="20dp"
+                        android:text="mmHG"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold | italic" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="KET TENSI DARAH"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ket_tensi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="33dp"
+                    android:text="Ket tensi darah"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="LINGKAR LENGAN ATAS"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lingkar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="33dp"
+                        android:text="Lingkar lengan atas"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+
+                        android:text="CM(Centimeter)"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold | italic" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="KET LILA"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ket_lingkar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="33dp"
+                    android:text="Ket lingkar lengan atas"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="LINGKAR PERUT"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tinggi_fundus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="33dp"
+                        android:text="tinggi fundus"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+
+                        android:paddingRight="15dp"
+                        android:text="CM (Centimeter)"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold | italic" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="KET LINGKAR PERUT"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ket_tinggi_fundus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="33dp"
+                    android:text="Ket tinggi fundus"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="DENYUT JANTUNG JANIN"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/denyut"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="33dp"
+                        android:text="Denyut jantung janin"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="13dp"
+                        android:text="Per Menit"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:textStyle="bold | italic" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="KET DENYUT JANTUNG JANIN"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ket_denyut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="33dp"
+                    android:text="Ket Denyut jantung janin"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="CATATAN"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/catatan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="33dp"
+                    android:text="catatan"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                    android:drawablePadding="10dp"
+                    android:text="JENIS OBAT"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jenis_obat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="33dp"
+                    android:text="jenis obat"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

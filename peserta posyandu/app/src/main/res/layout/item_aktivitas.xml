@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_two"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.captain_miao.optroundcardview.OptRoundCardView
+            android:id="@+id/card_notif"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="false"
+            android:focusable="false"
+            app:optRoundCardBottomEdges="false"
+            app:optRoundCardCornerRadius="8dp"
+            app:optRoundCardLeftBottomCorner="false"
+            app:optRoundCardRightBottomCorner="false">
+
+            <LinearLayout
+                android:background="@drawable/gradient1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/title_hasil"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textColor=" @color/black"
+                    android:textSize="15dp"
+
+                    android:text="{TITLE}"/>
+            </LinearLayout>
+
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fceaea"/>
+
+        <com.github.captain_miao.optroundcardview.OptRoundCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="false"
+            android:focusable="false"
+            app:optRoundCardBottomEdges="false"
+            app:optRoundCardCornerRadius="0dp"
+            app:optRoundCardTopEdges="false">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/text_catatan"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/notes"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="HASIL"/>
+
+                <TextView
+                    android:id="@+id/text_value_catatan"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:text="{TEXT}"/>
+
+                <TextView
+                    android:id="@+id/text_obat"
+                    android:drawableLeft="@drawable/obat"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="JENIS OBAT"/>
+
+                <TextView
+                    android:id="@+id/text_value_obat"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:text="{TEXT}"/>
+
+
+                <TextView
+                    android:id="@+id/text_tgl"
+                    android:drawableLeft="@drawable/obat"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="TANGGAL PERIKSA"/>
+
+                <TextView
+                    android:id="@+id/text_value_periksa"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:text="{TEXT}"/>
+
+                <TextView
+                    android:id="@+id/text_pengumuman"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="{TEXT}"/>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <RatingBar-->
+<!--                        android:id="@+id/rating"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:scaleX="0.5"-->
+<!--                        android:scaleY="0.5"-->
+<!--                        android:theme="@style/RatingBar"-->
+<!--                        android:transformPivotX="0dp"-->
+<!--                        android:transformPivotY="14dp"/>-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/feedback"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:text="FEDDBACK"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="#ffff" />-->
+
+<!--                </LinearLayout>-->
+            </LinearLayout>
+
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+        <com.github.captain_miao.optroundcardview.OptRoundCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="false"
+            android:focusable="false"
+            app:optRoundCardBottomEdges="false"
+            app:optRoundCardCornerRadius="0dp"
+            app:optRoundCardTopEdges="false">
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="LIHAT DETAIL"
+                android:id="@+id/btn_lihat_details"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#ffff" />
+
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
