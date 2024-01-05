@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuUtamaPeserta"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat Datang Kader,"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/nama_kader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.04"
+                android:text="{NAMA KADER}"
+                android:textColor="#fff"
+                android:textSize="28dp" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/posyandu1" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/data_peserta"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#1E88E5"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_post_add_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peserta"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/laporan_balita"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="30dp"
+                app:cardBackgroundColor="#1E88E5"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_menu_book_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laporan"
+                        android:textColor="#fff"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balita"
+                        android:textColor="#fff"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/laporan_hamil"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#1E88E5"
+                android:layout_marginLeft="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_menu_book_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laporan"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ibu Hamil"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/laporan_lansia"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#1E88E5"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_menu_book_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laporan"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lansia"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/chart_report"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#1E88E5"
+                android:layout_marginLeft="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:tint="#1CBDE5"
+                        app:backgroundTintMode="add"
+                        android:src="@drawable/graph"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grafik"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pemeriksaan"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/kirim_notif"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#1E88E5"
+                android:layout_marginLeft="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/time_table"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notifikasi"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jadwal"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/laporan_kunjungan"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#1E88E5"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_menu_book_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laporan"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kunjungan"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#1E88E5"
+            app:icon="@drawable/logout"
+            app:iconGravity="textStart"
+            app:iconSize="30dip"
+            app:iconTint="#1CBDE5"
+            android:text="LOG OUT" />
+    </LinearLayout>
+</LinearLayout>

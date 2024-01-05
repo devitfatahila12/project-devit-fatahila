@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_two"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".DetailLaporanLansia">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gradient1"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laporan Lansia"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:text="NIK"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_shape"
+                    android:drawableLeft="@drawable/ic_baseline_format_list_numbered_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Masukkan Nik "
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="13dp"
+                    android:paddingRight="3dp"
+                    android:text="Salin"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:text="NAMA LANSIA"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_shape"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawablePadding="12dp"
+                android:hint="Masukkan Nama "
+                android:padding="10dp"
+                android:paddingLeft="12dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:text="JENIS KELAMIN"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/jenis_kelamin_new_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:background="@drawable/rounded_shape"
+                android:drawablePadding="12dp"
+                android:hint="Pilih Jenis Kelamin"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:text="TANGGAL PERIKSA"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/tgl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/rounded_shape"
+                android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+                android:drawablePadding="12dp"
+                android:hint="Tgl periksa "
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:text="UMUR LANSIA"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/umur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:inputType="phone"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawablePadding="12dp"
+                android:hint="Masukkan Umur "
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/rounded_btnreg"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:text="(Tahun)"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold | italic"/>
+            </RelativeLayout>
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:drawablePadding="12dp"-->
+<!--                android:drawableLeft="@drawable/ic_baseline_female_24"-->
+<!--                android:paddingLeft="12dp"-->
+<!--                android:text="Jenis Kelamin"-->
+<!--                android:textColor="#00C9B8"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/jenis"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:spinnerMode="dialog"-->
+<!--                android:layout_marginTop="20dp"/>-->
+
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:text="BERAT BADAN"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/berat_badan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_btnreg"
+                    android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Berat Badan"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:text="KG (Kilogram)"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold | italic" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:text="TENSI DARAH"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/tensi_darah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_btnreg"
+                    android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                    android:drawablePadding="12dp"
+                    android:hint=" Tensi Darah "
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:text="mmHG"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold | italic" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:text="KET TENSI DARAH"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/tensi_darah_new_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+
+                android:drawablePadding="12dp"
+                android:hint="Ket Tensi Darah "
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/rounded_shape"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+<!--            <TextView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:drawablePadding="12dp"-->
+<!--                android:paddingLeft="12dp"-->
+<!--                android:text="Keterangan"-->
+<!--                android:textColor="#00C9B8"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/tensi"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:spinnerMode="dialog"-->
+<!--                android:layout_marginTop="20dp"/>-->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:text="ASAM URAT"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/asam_urat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_btnreg"
+                    android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                    android:drawablePadding="12dp"
+                    android:hint=" Asam Urat "
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:text="mg/dL"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold | italic" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:text="KET ASAM URAT"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/asam_urat_new_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+
+                android:drawablePadding="12dp"
+                android:hint="Ket Asam Urat "
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/rounded_shape"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+<!--            <TextView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:drawablePadding="12dp"-->
+<!--                android:paddingLeft="12dp"-->
+<!--                android:text="Keterangan"-->
+<!--                android:textColor="#00C9B8"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/asam"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:spinnerMode="dialog"-->
+<!--                android:layout_marginTop="20dp"/>-->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:text="KOLESTROL"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/kolestrol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_btnreg"
+                    android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                    android:drawablePadding="12dp"
+                    android:hint=" Kolestrol "
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:text="mg/dL"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold | italic" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:text="KET KOLESTROL"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/kolestrol_new_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+
+                android:drawablePadding="12dp"
+                android:hint="Ket Kolestrol "
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/rounded_shape"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+<!--            <TextView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:drawablePadding="12dp"-->
+<!--                android:paddingLeft="12dp"-->
+<!--                android:text="Keterangan"-->
+<!--                android:textColor="#00C9B8"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/kolestrl"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:spinnerMode="dialog"-->
+<!--                android:layout_marginTop="20dp"/>-->
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:text="JENIS OBAT"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:background="@drawable/rounded_btnreg"
+                android:id="@+id/jenis_obat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawableRight="@drawable/dropdown"
+                android:drawablePadding="12dp"
+                android:textSize="15dp"
+                android:hint="Jenis Obat"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="11dp"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="10dp"
+                android:text="CATATAN"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/catatan"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawablePadding="12dp"
+                android:hint=" Masukan Catatan "
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/rounded_btnreg"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_btnlog"
+                android:text="Edit data"
+                android:textColor="#ffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_hapus"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/rounded_btnlog"
+                android:text="Hapus data"
+                android:textColor="#ffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

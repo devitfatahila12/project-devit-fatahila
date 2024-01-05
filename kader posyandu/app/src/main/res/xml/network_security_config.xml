@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+<domain-config cleartextTrafficPermitted="true">
+<domain includeSubdomains="true">192.168.247.201</domain>
+</domain-config>
+</network-security-config>
+
+<!--Secara keseluruhan, codingan ini mengizinkan aplikasi untuk melakukan koneksi ke domain "192.168.85.201"
+menggunakan protokol HTTP biasa (non-HTTPS). Biasanya, Android menerapkan kebijakan keamanan yang lebih ketat
+dan mengharuskan koneksi yang aman (HTTPS). Namun, dengan menggunakan file konfigurasi keamanan jaringan seperti ini,
+kita dapat mengizinkan penggunaan protokol HTTP biasa untuk domain yang spesifik, seperti dalam contoh ini.-->
+
+<!--Codingan yang diberikan adalah file konfigurasi keamanan jaringan (network security) dalam format XML.
+File ini digunakan untuk mengatur kebijakan keamanan pada aplikasi Android terkait akses ke jaringan.-->
+
+<!--Kemudian, kita memiliki tag <domain-config> yang digunakan untuk mengkonfigurasi kebijakan keamanan untuk domain tertentu.
+Dalam kasus ini, atribut cleartextTrafficPermitted="true" pada tag <domain-config>
+memungkinkan penggunaan protokol HTTP biasa (cleartext) untuk domain yang ditentukan.
+Dengan kata lain, ini mengizinkan aplikasi untuk melakukan koneksi ke domain tersebut menggunakan HTTP.-->
+
+<!--Jika aplikasi tidak menggunakan codingan ini dan mencoba melakukan koneksi ke server
+menggunakan protokol HTTP biasa (non-HTTPS), maka akan terjadi kesalahan atau penolakan koneksi
+oleh sistem operasi Android. Permintaan koneksi HTTP akan diblokir oleh kebijakan keamanan bawaan.-->

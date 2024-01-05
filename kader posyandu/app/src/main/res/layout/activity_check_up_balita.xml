@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_two"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".CheckUpBalita">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gradient1"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PEMERIKSAAN BALITA"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"
+                android:textColor="#FFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_shape"
+                    android:drawableLeft="@drawable/ic_baseline_format_list_numbered_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Masukkan Nik "
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="21dp"
+                    android:paddingRight="5dp"
+                    android:text="Salin"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/16"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawablePadding="12dp"
+                android:hint="Masukkan Nama "
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/rounded_shape"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/tgl_lahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_shape"
+                    android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Tanggal lahir "
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:text="(Tanggal Lahir)"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold | italic" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/tgl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_shape"
+                    android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Tgl periksa "
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:text="(Tanggal Periksa)"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold | italic" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:background="@drawable/rounded_shape"
+                android:id="@+id/jenis_kelamin_new_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawablePadding="12dp"
+                android:hint="Pilih Jenis Kelamin"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:background="@drawable/rounded_shape"
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawablePadding="12dp"
+                android:hint="Alamat"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:background="@drawable/rounded_btnreg"
+                android:id="@+id/orang_tua_kandung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawablePadding="12dp"
+                android:hint="Nama Orang Tua"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/umur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_btnreg"
+                    android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Masukkan Umur"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="22dp"
+                    android:paddingRight="20dp"
+                    android:text="(Bulan)"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold | italic" />
+
+            </RelativeLayout>
+
+
+
+
+
+            <!--            <TextView-->
+            <!--                android:layout_width="fill_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:drawablePadding="12dp"-->
+            <!--                android:drawableLeft="@drawable/ic_baseline_female_24"-->
+            <!--                android:paddingLeft="12dp"-->
+            <!--                android:text="Jenis Kelamin"-->
+            <!--                android:textColor="#00C9B8"-->
+            <!--                android:textSize="20sp" />-->
+
+            <!--            <Spinner-->
+            <!--                android:id="@+id/jenis_kelamin"-->
+            <!--                android:layout_width="fill_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:spinnerMode="dialog"/>-->
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/berat_badan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/rounded_btnreg"
+                    android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Berat Badan"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:text="KG (Kilogram)"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold | italic" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:background="@drawable/rounded_shape"
+                android:id="@+id/berat_badan_new_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+
+                android:drawablePadding="12dp"
+                android:hint="Ket Berat Badan "
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/tinggi_badan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_btnreg"
+                    android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Tinggi Badan"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:text="CM (Centimeter)"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold | italic" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:background="@drawable/rounded_shape"
+                android:id="@+id/tinggi_badan_new_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+
+                android:drawablePadding="12dp"
+                android:textSize="15dp"
+                android:hint="Ket tinggi badan"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+            <EditText
+                android:background="@drawable/rounded_btnreg"
+                android:id="@+id/lingkar_kepala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:inputType="phone"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawablePadding="12dp"
+                android:hint="Lingkar Kepala"
+                android:textSize="14dp"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="20dp"
+                    android:paddingRight="15dp"
+                    android:text="CM (Centimeter)"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold | italic" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:background="@drawable/rounded_shape"
+                android:id="@+id/lingkar_kepala_new_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+
+                android:drawablePadding="12dp"
+                android:textSize="15dp"
+                android:hint="Ket lingkar kepala"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <!--            <TextView-->
+            <!--                android:layout_width="fill_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:drawablePadding="12dp"-->
+            <!--                android:paddingLeft="12dp"-->
+            <!--                android:text="Keterangan lingkar kepala"-->
+            <!--                android:textColor="#00C9B8"-->
+            <!--                android:textSize="20sp" />-->
+
+            <!--            <Spinner-->
+            <!--                android:id="@+id/lingkar"-->
+            <!--                android:layout_width="fill_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:spinnerMode="dialog"/>-->
+
+            <EditText
+                android:background="@drawable/rounded_btnreg"
+                android:id="@+id/jenis_imunisasi_new_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawableRight="@drawable/dropdown"
+                android:drawablePadding="12dp"
+                android:textSize="15dp"
+                android:hint="Jenis Imunisasi"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+            <!--            <TextView-->
+            <!--                android:layout_width="fill_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:drawablePadding="12dp"-->
+            <!--                android:paddingLeft="12dp"-->
+            <!--                android:text="Jenis Imunisasi"-->
+            <!--                android:textColor="#00C9B8"-->
+            <!--                android:textSize="20sp" />-->
+
+            <!--            <Spinner-->
+            <!--                android:id="@+id/jenis_imunisasi"-->
+            <!--                android:layout_width="fill_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:spinnerMode="dialog"/>-->
+
+
+            <EditText
+                android:background="@drawable/rounded_btnreg"
+                android:id="@+id/jenis_obat"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/dropdown"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawablePadding="12dp"
+                android:textSize="15dp"
+                android:hint="Masukkan Jenis Vitamin"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+            <EditText
+                android:background="@drawable/rounded_btnreg"
+                android:id="@+id/catatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawablePadding="12dp"
+                android:hint="Masukan Catatan"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/ripple_effect"
+                android:text="Simpan"
+                android:textColor="#ffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

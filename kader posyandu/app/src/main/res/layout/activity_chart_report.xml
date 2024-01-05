@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_two"
+    tools:context=".ChartReport">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grafik Hasil Pemeriksaan"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="NIK Peserta">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nik"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+
+                android:drawableTint="@color/black"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Jenis Peserta">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/jenis_peserta"
+                android:layout_width="match_parent"
+                android:textColor="#ffff"
+                android:drawableTint="@color/black"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                tools:ignore="Deprecated" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#08710C"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="15dp"
+            android:text="Pencarian" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/text_hasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grafik Hasil Pemeriksaan Tidak Ditemukan"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

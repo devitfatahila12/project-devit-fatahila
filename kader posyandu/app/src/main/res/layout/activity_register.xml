@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_two"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient1"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTRASI"
+                android:textAlignment="center"
+                android:textColor="#FFFF"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_btnreg"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_border_color_24"
+                android:drawablePadding="12dp"
+                android:hint="Masukkan Nama "
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_btnreg"
+                    android:drawableLeft="@drawable/ic_baseline_format_list_numbered_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Masukkan Nik "
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="32dp"
+                    android:paddingRight="5dp"
+                    android:text="Salin"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/16"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:maxLength="7"
+                android:drawableLeft="@drawable/ic_baseline_format_list_numbered_24"
+                android:drawablePadding="12dp"
+                android:hint="Masukkan Password "
+                android:inputType="textPassword"
+                android:longClickable="false"
+                android:background="@drawable/rounded_btnreg"
+                android:drawableRight="@drawable/ic_baseline_visibility"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/count1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/7"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/verified_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:maxLength="7"
+                android:drawableLeft="@drawable/ic_baseline_format_list_numbered_24"
+                android:drawablePadding="12dp"
+                android:hint="Ulangi Password "
+                android:inputType="textPassword"
+                android:longClickable="false"
+                android:background="@drawable/rounded_btnreg"
+                android:drawableRight="@drawable/ic_baseline_visibility"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="15dp">
+
+                <!--COPY-->
+                <TextView
+                    android:id="@+id/error_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+                <!--COPY-->
+
+                <TextView
+                    android:id="@+id/count2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/7"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:background="@drawable/rounded_btnreg"
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="8dp"
+                android:drawableLeft="@drawable/ic_baseline_location_city_24"
+                android:drawablePadding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="Masukkan Alamat "
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/tgl"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_btnreg"
+                    android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Tgl lahir "
+                    android:padding="10dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tgl"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/tgl"
+                    android:layout_toRightOf="@+id/tgl"
+                    android:background="@drawable/ripple_effect"
+                    android:text="Tanggal"
+                    android:textColor="#ffff"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Registrasi"
+                android:id="@+id/btn_register"
+                android:textSize="18sp"
+                android:layout_marginTop="25sp"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:background="@drawable/ripple_effect"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</ScrollView>
