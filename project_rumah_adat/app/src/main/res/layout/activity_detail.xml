@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="6dp">
+
+        <ImageView
+            android:id="@+id/iv_foto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content "
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_nama_pahlawan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:gravity="start|end"
+            android:textColor="#100000"
+            android:text="Nama Pahlawan"
+            style="@style/TextAppearance.AppCompat.Large"
+            />
+
+        <TextView
+            android:id="@+id/tv_tentang_pahlawan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:gravity="start|end"
+            android:textColor="#100000"
+            android:text="Tentang Pahlawan"
+            style="@style/TextAppearance.AppCompat.Medium"
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

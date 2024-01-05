@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="#ececec"
+    android:elevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FDE4E4"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/iv_pahlawan"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_nama_pahlawan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/iv_pahlawan"
+
+            android:text="Nama Pahlawan"
+            android:gravity="start|end"
+            android:textColor="#100000"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_tentang_pahlawan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nama_pahlawan"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/iv_pahlawan"
+            android:ellipsize="end"
+
+            android:gravity="start|end"
+            android:maxLines="4"
+            android:text="Tentang Pahlawan"
+            android:textColor="#100000"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
